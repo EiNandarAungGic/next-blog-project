@@ -5,7 +5,7 @@ import axios from "axios";
 import Link from "next/link";
 import PostFooter from "./footer/page";
 
-const Home = () => {
+const PostIndex = () => {
   const getAllPosts = async () => {
     try {
       const res = await axios.get("http://localhost:4000/posts");
@@ -130,4 +130,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default PostIndex;
